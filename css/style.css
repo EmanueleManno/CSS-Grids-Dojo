@@ -1,0 +1,69 @@
+/*CSS RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Sfondo del Body*/
+body {
+    background: rgb(181,193,232);
+background: linear-gradient(90deg, rgba(181,193,232,1) 0%, rgba(255,224,224,0.5085493670124299) 50%, rgba(244,226,249,1) 100%);
+}
+
+/*Stile dell'Item*/
+.item {
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    font-size: 150%;
+    box-shadow: 2px 2px 2px black;
+}
+
+/*Stile del contenitore*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-auto-rows: 150px;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/*Stile dell'Header e del Footer*/
+header, footer {
+    grid-column: 1 / -1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+/*Titolo dell'Header*/
+header h2 {
+    color: black;
+    font-size: 35px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/*Stile del pannello grande*/
+.big {
+    grid-row-end: span 3;
+    background-color: red;
+}
+
+/*Stile del pannello medio*/
+.medium {
+    grid-row-end: span 2;
+    background-color: blue;
+}
+
+/*Stile delle immagini nel pannello*/
+.item > img {
+    height: 100%;
+    width: 100%;
+}
